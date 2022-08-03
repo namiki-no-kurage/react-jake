@@ -1,11 +1,16 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import { ColoredMessage } from './components/ColoredMessage'
 
 export const App = () => {
   const [num, setNum] = useState(0)
+
   const onClickButton = () => {
     setNum((prev) => prev + 1)
   }
+
+  useEffect(() => {
+    console.log('alert')
+  }, [num])
 
   return (
     <>
