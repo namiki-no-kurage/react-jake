@@ -1,3 +1,9 @@
+import { StyledJsx } from "./components/StyledJsx"
+
 export const App = () => {
-  return <div>Hello!</div>
+  return (
+    <>
+      <StyledJsx />
+    </>
+  )
 }
